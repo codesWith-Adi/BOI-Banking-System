@@ -1,0 +1,18 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# Transaction history files
+Aditya_9999.txt
+Rohit_8888.txt
+Mohit_7777.txt
+Ayush_6666.txt
+Mohan_5555.txt
+Prince_4444.txt
+Raj_3333.txt
+Anurag_2222.txt
+Ashish_1111.txt
+Priyadarshi_0000.txt
