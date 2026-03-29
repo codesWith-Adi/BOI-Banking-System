@@ -1,0 +1,19 @@
+Enter your name: Aditya
+What do you want to do? [c = credit / d = debit / e = exit]: c
+Enter Amount to Credit: 1000
+
+You credited ₹1000 in account no XXXXXX9999
+Now your account has balance ₹1000
+
+Enter your name: Aditya
+What do you want to do? [c = credit / d = debit / e = exit]: d
+Enter Amount to Debit: 300
+
+You debited amount ₹300 from account no XXXXXX9999
+Now your account has balance ₹700
+
+-------------------------------------------------------------------------
+
+After this cheak "Mini_Statement" file - it makes History for each Users
+
+-------------------------------------------------------------------------
