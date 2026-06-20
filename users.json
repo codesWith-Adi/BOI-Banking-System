@@ -1,0 +1,82 @@
+{
+    "Aditya": {
+        "account_no": "9999999999",
+        "pin": "1234",
+        "balance": 149088314,
+        "history": [
+            "Credited ₹2000 at 29-03-2026 18:46:28 | Balance: ₹2000",
+            "Failed Debit ₹3000 at 29-03-2026 18:46:41 | Balance: ₹2000",
+            "29-03-2026 21:09:43|DEBIT|₹500|₹1500",
+            "29-03-2026 21:11:22|CREDIT|₹40|₹1540",
+            "29-03-2026 21:13:15|TRANSFER to Rohit|₹1|₹1539",
+            "30-03-2026 18:15:43|CREDIT|₹257463000|₹257464539",
+            "30-03-2026 18:15:59|DEBIT|₹836547|₹256627992",
+            "30-03-2026 18:16:31|TRANSFER to Mohit|₹50000|₹256577992",
+            "30-03-2026 18:16:58|TRANSFER to Rohit|₹70000000|₹186577992",
+            "30-03-2026 18:17:18|TRANSFER to Ayush|₹37444000|₹149133992",
+            "07-04-2026 21:39:10|TRANSFER to Rohit|₹45678|₹149088314"
+        ]
+    },
+    "Rohit": {
+        "account_no": "8888888888",
+        "pin": "2345",
+        "balance": 70045679,
+        "history": [
+            "29-03-2026 21:13:15|RECEIVED from Aditya|₹1|₹1",
+            "30-03-2026 18:16:58|RECEIVED from Aditya|₹70000000|₹70000001",
+            "07-04-2026 21:39:10|RECEIVED from Aditya|₹45678|₹70045679"
+        ]
+    },
+    "Mohit": {
+        "account_no": "7777777777",
+        "pin": "3456",
+        "balance": 50000,
+        "history": [
+            "30-03-2026 18:16:31|RECEIVED from Aditya|₹50000|₹50000"
+        ]
+    },
+    "Ayush": {
+        "account_no": "6666666666",
+        "pin": "4567",
+        "balance": 37444000,
+        "history": [
+            "30-03-2026 18:17:18|RECEIVED from Aditya|₹37444000|₹37444000"
+        ]
+    },
+    "Mohan": {
+        "account_no": "5555555555",
+        "pin": "5678",
+        "balance": 0,
+        "history": []
+    },
+    "Prince": {
+        "account_no": "4444444444",
+        "pin": "6789",
+        "balance": 0,
+        "history": []
+    },
+    "Raj": {
+        "account_no": "3333333333",
+        "pin": "7890",
+        "balance": 0,
+        "history": []
+    },
+    "Anurag": {
+        "account_no": "2222222222",
+        "pin": "8901",
+        "balance": 0,
+        "history": []
+    },
+    "Ashish": {
+        "account_no": "1111111111",
+        "pin": "9012",
+        "balance": 0,
+        "history": []
+    },
+    "Priyadarshi": {
+        "account_no": "0000000000",
+        "pin": "0123",
+        "balance": 0,
+        "history": []
+    }
+}
