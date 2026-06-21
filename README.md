@@ -1,173 +1,345 @@
-# 🏦 BOI Banking System (Python Mini Project)
+# 🏦 FinVault Desktop Banking Suite
 
-A simple **console-based banking system** built using **Python**.  
-This project is designed for **beginners** and demonstrates the use of:
+A modern desktop banking application built with Python and CustomTkinter that simulates real-world banking operations including account management, fund transfers, transaction tracking, passbook generation, and secure authentication.
 
-- **Object-Oriented Programming (OOP)**
-- **File Handling**
-- **Basic User Authentication**
-- **Transaction History Management**
+Designed to demonstrate practical software engineering concepts such as Object-Oriented Programming, GUI Development, Authentication Systems, Data Persistence, and Financial Transaction Processing.
 
 ---
 
-## 📌 Project Overview
+# 🌟 Key Highlights
 
-The **BOI Banking System** allows predefined users to:
+✅ Secure PIN-Based Authentication
 
-- Login using their name
-- Credit money into their account
-- Debit money from their account
-- Automatically save transaction history in a text file
-- Maintain balance even after restarting the program
+✅ Modern GUI using CustomTkinter
 
-This project is made for **learning and practice purposes only**.
+✅ Real-Time Balance Management
 
----
+✅ Inter-Account Money Transfer
 
-## 🚀 Features
+✅ Transaction History Tracking
 
-- ✅ Predefined user database
-- ✅ Credit amount
-- ✅ Debit amount
-- ✅ Insufficient balance handling
-- ✅ Account number masking for privacy
-- ✅ User-wise transaction history files
-- ✅ Automatic balance recovery from saved file
+✅ PDF Passbook Generation
+
+✅ JSON-Based Persistent Storage
+
+✅ Light & Dark Theme Support
+
+✅ Account Number Privacy Masking
 
 ---
 
-## 🛠️ Technologies Used
-
-- **Python 3**
-- **datetime module**
-- **File Handling**
-- **Classes & Objects**
-
----
-
-## 📂 Project Structure
-
-```bash
-
-
-BOI-Banking-System/
-│
-├── banking_system.py
-├── README.md
-├── .gitignore
-├── sample_output.txt
-│
-└──Mini_Statement/
-    ├── Aditya_9999.txt
-    ├── Rohit_8888.txt
-    └── ...
----
-
-
-## ▶️ How to Run the Project
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/codesWith-Adi/BOI-Banking-System.git
-```
-
-### 2. Open the project folder
-```bash
-cd BOI-Banking-System
-```
-
-### 3. Run the Python file
-```bash
-python banking_system.py
-```
-
----
-
-## 💻 Example Usage
+# 📸 Application Workflow
 
 ```text
-Enter your name: Aditya
-What do you want to do? [c = credit / d = debit / e = exit]: c
-Enter Amount to Credit: 500
-
-You credited ₹500 in account no XXXXXX9999
-Now your account has balance ₹500
+User Login
+     │
+     ▼
+Dashboard
+     │
+ ┌───┼──────────────┬───────────────┐
+ ▼   ▼              ▼               ▼
+Credit Debit     Transfer      History
+ │      │            │              │
+ ▼      ▼            ▼              ▼
+Balance Updated → Transaction Recorded
+                        │
+                        ▼
+                  PDF Passbook
 ```
 
 ---
 
-## 📜 How It Works
+# 🔐 Demo Accounts
 
-### Step 1: User Login
-The program asks for the user's name and checks it against a predefined users database.
+Use any of the following accounts to test the application.
 
-### Step 2: File Creation
-If the user logs in for the first time, a text file is automatically created to store their transaction history.
+| Username    | PIN  |
+| ----------- | ---- |
+| Aditya      | 1234 |
+| Rohit       | 2345 |
+| Mohit       | 3456 |
+| Ayush       | 4567 |
+| Mohan       | 5678 |
+| Prince      | 6789 |
+| Raj         | 7890 |
+| Anurag      | 8901 |
+| Ashish      | 9012 |
+| Priyadarshi | 0123 |
 
-### Step 3: Load Previous Balance
-The system reads the user's file and extracts the last saved balance.
-
-### Step 4: Banking Operations
-The user can choose:
-- `c` → Credit money
-- `d` → Debit money
-- `e` → Exit program
-
-### Step 5: Save Transaction
-Every transaction is saved with:
-- Amount
-- Date and time
-- Updated balance
+> These accounts are preloaded for demonstration and testing purposes.
 
 ---
 
-## 🔐 Privacy Feature
+# 🚀 Getting Started
 
-To improve privacy, the account number is partially hidden.
+## Clone Repository
+
+```bash
+git clone https://github.com/codesWith-Adi/FinVault-Desktop-Banking-Suite.git
+```
+
+## Navigate to Project Folder
+
+```bash
+cd FinVault-Desktop-Banking-Suite
+```
+
+## Install Dependencies
+
+```bash
+pip install customtkinter reportlab
+```
+
+## Run Application
+
+```bash
+python main.py
+```
+
+---
+
+# 🖥️ How to Login
+
+### Step 1
+
+Launch the application.
+
+### Step 2
+
+Enter a valid Username.
 
 Example:
 
 ```text
-9999999999 → XXXXXX9999
+Username: Aditya
+```
+
+### Step 3
+
+Enter the corresponding PIN.
+
+```text
+PIN: 1234
+```
+
+### Step 4
+
+Click Login.
+
+Upon successful authentication, the Banking Dashboard will open.
+
+---
+
+# 📚 How to Use
+
+## 💰 Credit Money
+
+1. Click Credit.
+2. Enter amount.
+3. Confirm transaction.
+
+Result:
+
+* Balance increases.
+* Transaction gets recorded.
+
+---
+
+## 💸 Debit Money
+
+1. Click Debit.
+2. Enter withdrawal amount.
+3. Confirm transaction.
+
+Result:
+
+* Balance decreases.
+* Insufficient balance is automatically handled.
+
+---
+
+## 🔄 Transfer Funds
+
+1. Select Transfer.
+2. Enter recipient username.
+3. Enter amount.
+4. Confirm transfer.
+
+Result:
+
+* Sender balance decreases.
+* Receiver balance increases.
+* Both histories are updated.
+
+---
+
+## 📜 View Transaction History
+
+Click History to view:
+
+* Credits
+* Debits
+* Transfers
+* Received Payments
+* Failed Transactions
+
+with timestamps.
+
+---
+
+## 🔍 Search Transactions
+
+Search records by date to quickly locate previous banking activity.
+
+Example:
+
+```text
+07-04-2026
 ```
 
 ---
 
-## ⚠️ Limitations
+## 📄 Generate Passbook
 
-This is a **beginner-level educational project**, so it does **not** include:
+Click Download Passbook.
 
-- Real password authentication
-- Database integration
-- GUI interface
-- Encryption
-- Real banking security
+A professional PDF statement will be generated containing:
+
+* Account Holder Name
+* Account Number
+* Current Balance
+* Complete Transaction History
 
 ---
 
-## 📈 Future Improvements
+## 🎨 Change Theme
 
-Possible upgrades for this project:
+Use the Theme Toggle option to switch between:
 
-- Add **PIN / Password login**
-- Add **Check balance option**
-- Add **Transfer money feature**
-- Add **Mini statement**
-- Add **PDF Download**
-- Add **GUI using Tkinter**
-- Add **Database using MySQL / SQLite**
-- Add **Admin panel**
+* Light Mode
+* Dark Mode
 
------------------------------------------------------------------------------------
+---
 
-## 👨‍💻 Author
+# 🏗️ System Architecture
 
-**Aditya Kumar Pandey**  
-**Diploma in CSE (1st Year Student)**  
-Learning: Python, programming and Web development 🚀
+```text
+GUI Layer (CustomTkinter)
+            │
+            ▼
+Business Logic Layer
+            │
+            ▼
+Banking Operations
+(Credit / Debit / Transfer)
+            │
+            ▼
+JSON Database
+(users.json)
+            │
+            ▼
+PDF Generator
+(ReportLab)
+```
 
------------------------------------------------------------------------------------
+---
 
-## ⭐ If you like this project
+# 🛠️ Technology Stack
 
-Feel free to give a **star** on GitHub 🌟
+| Technology    | Purpose                  |
+| ------------- | ------------------------ |
+| Python        | Core Development         |
+| CustomTkinter | Modern GUI               |
+| JSON          | Persistent Data Storage  |
+| ReportLab     | PDF Generation           |
+| Datetime      | Timestamp Management     |
+| OOP           | Application Architecture |
+
+---
+
+# 📂 Project Structure
+
+```text
+FinVault-Desktop-Banking-Suite/
+│
+├── main.py
+├── bank_logic.py
+├── pdf_generator.py
+├── users.json
+│
+├── assets/
+│   └── images
+│
+├── PassBooks/
+│   └── Generated PDF Statements
+│
+├── README.md
+│
+└── requirements.txt
+```
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates practical implementation of:
+
+* Object-Oriented Programming
+* GUI Development
+* Authentication Systems
+* Financial Transaction Processing
+* Data Persistence
+* File Handling
+* PDF Report Generation
+* Modular Software Design
+
+---
+
+# 🔮 Future Enhancements
+
+* SQLite/MySQL Integration
+* User Registration Module
+* Admin Dashboard
+* OTP Authentication
+* Email Notifications
+* Interest Calculation
+* Loan Management System
+* Account Statement Export (Excel)
+* Cloud Database Support
+* Multi-Bank Architecture
+
+---
+
+# 👨‍💻 Developer
+
+Aditya Kumar Pandey
+
+Computer Science & Engineering Student
+
+Focused on:
+
+* Software Engineering
+* Artificial Intelligence
+* Full Stack Development
+* Data Structures & Algorithms
+* Open Source Development
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+⭐ Star the Repository
+
+🍴 Fork the Project
+
+🚀 Contribute New Features
+
+💡 Share Feedback
+
+---
+
+### Built with Python ❤️
+
+### Simulating Real Banking Operations Through Software Engineering 🚀
